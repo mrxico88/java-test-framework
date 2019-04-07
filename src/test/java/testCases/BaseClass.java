@@ -23,8 +23,8 @@ public class BaseClass {
 
     @BeforeClass
     public void setup(){
-        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/drivers/chromedriver");
-        downloadFilePath = System.getProperty("user.dir") + "/src/downloads";
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/drivers/chromedriver");
+        downloadFilePath = System.getProperty("user.dir") + "/downloads";
         File fileDirectory = FileUtils.getFile(downloadFilePath);
         fileDirectory.mkdir();
         HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
