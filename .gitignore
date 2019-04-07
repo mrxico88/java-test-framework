@@ -1,3 +1,6 @@
 .idea/
 *.html
 *.png
+download/
+screenshots/
+test-output/
