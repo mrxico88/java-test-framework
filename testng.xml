@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <listeners>
+        <listener class-name="utils.Listeners.Listener"/>
+    </listeners>
+    <test thread-count="5" name="TestSearchKeyword">
+        <parameter name="environment" value="${test.env}"/>
+        <classes>
+            <class name="testCases.TestSearchKeyword"/>
+        </classes>
+    </test> <!-- Test -->
+    <test thread-count="5" name="TestCreateUser">
+        <parameter name="environment" value="${test.env}"/>
+        <classes>
+            <class name="testCases.TestCreateUser"/>
+        </classes>
+    </test> <!-- Test -->
+    <test thread-count="5" name="TestPurchase">
+        <parameter name="environment" value="${test.env}"/>
+        <classes>
+            <class name="testCases.TestPurchase"/>
+        </classes>
+    </test> <!-- Test -->
+    <test thread-count="5" name="TestDownloadInvoice">
+        <parameter name="environment" value="${test.env}"/>
+        <classes>
+            <class name="testCases.TestDownloadInvoice"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
