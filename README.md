@@ -6,4 +6,4 @@ Before running test, you need to have java and maven installed, as well as selen
 
 Command to run test via terminal:
 
-mvn clean -Dtest.env=<Test-Environment> test
+mvn clean -Dtest.env="Test-Environment" test
